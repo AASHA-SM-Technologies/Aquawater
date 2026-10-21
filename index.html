@@ -266,7 +266,7 @@ var I={
 };
 function ic(n,s){return '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"'+(s?' style="width:'+s+'px;height:'+s+'px"':'')+'>'+I[n]+'</svg>'}
 var uid=0;
-function A(f,alt){return '<img src="assets/'+f+'.jpg" alt="'+alt+'" loading="lazy" decoding="async">'}
+function A(f,alt){return '<img src="/assets/'+f+'.jpg" alt="'+alt+'" loading="lazy" decoding="async">'}
 /* product art: stylised illustrations, not photographs */
 function unit(kind,glow){
   var u=++uid,g='g'+u,d='d'+u;
@@ -375,7 +375,7 @@ var PAGES={
 home:function(){
  return '<section class="hero"><canvas id="cv" aria-hidden="true"></canvas><div class="w"><div><span class="eyebrow" style="color:var(--aqua)">Water purification</span><h1 style="margin-top:12px">Pure Water<br><em>Healthier Life</em></h1><p class="lead">Advanced water purification technology for a safer and healthier tomorrow.</p><div class="cta-row"><button class="btn aqua" data-go="products">Explore Our Products</button><button class="btn ghost" data-go="technology">Discover Our Technology</button></div>'+
  '<div class="badges"><div class="badge">'+ic('drop')+'<div><b>Clean Water</b>Every glass</div></div><div class="badge">'+ic('layers')+'<div><b>7-Stage</b>Filtration</div></div><div class="badge">'+ic('heart')+'<div><b>Healthier</b>Living</div></div></div></div>'+
- '<div class="stage" id="stage"><div class="ripple"><i></i><i></i><i></i></div><div class="tilt" id="tilt"><img class="heroimg" src="assets/hero-purifier.jpg" alt="AquaPure purifier with water splash"></div></div></div>'+
+ '<div class="stage" id="stage"><div class="ripple"><i></i><i></i><i></i></div><div class="tilt" id="tilt"><img class="heroimg" src="/assets/hero-purifier.jpg" alt="AquaPure purifier with water splash"></div></div></div>'+
  '<button class="scrollind" data-scroll="why" aria-label="Scroll down">Scroll<span></span></button>'+
  '<svg class="wave" viewBox="0 0 1440 60" preserveAspectRatio="none" aria-hidden="true"><path d="M0 30C240 70 480 0 720 25s480 40 720 5V60H0z" fill="currentColor"/></svg></section>'+
  '<section class="band" id="why"><div class="w">'+sh('Why AquaPure','Why Choose AquaPure?','',1)+'<div class="grid g4">'+[['drop','Pure & Safe','Removes harmful impurities.'],['cpu','Advanced Technology','Multi-stage filtration.'],['drop','Better Taste','Fresh and great taste.'],['leaf','Eco Friendly','Sustainable solution.']].map(function(c){return '<div class="card rv"><div class="ico">'+ic(c[0])+'</div><h3>'+c[1]+'</h3><p>'+c[2]+'</p></div>'}).join('')+'</div></div></section>'+
