@@ -1,0 +1,19 @@
+{
+  "name": "aquapure-website",
+  "version": "1.0.0",
+  "description": "8 pages: Home, Products, Technology, Benefits, About, Gallery, Contact, FAQ. Plain HTML + CSS + JavaScript. No install or build step needed.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "vite --host 0.0.0.0",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "vite": "^8.3.4"
+  }
+}
